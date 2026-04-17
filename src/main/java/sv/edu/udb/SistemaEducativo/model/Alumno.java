@@ -1,21 +1,16 @@
 package sv.edu.udb.SistemaEducativo.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import org.springframework.data.annotation.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class Alumno {
 
-    @Id
+    @Id   // 👈 ahora sí funciona correctamente
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String nombre;
     private String apellido;
-
-    // GETTERS Y SETTERS
 
     public Long getId() {
         return id;

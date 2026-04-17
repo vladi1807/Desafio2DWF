@@ -1,7 +1,6 @@
 package sv.edu.udb.SistemaEducativo.model;
 
 import jakarta.persistence.*;
-import org.springframework.data.annotation.Id;
 
 @Entity
 public class AlumnoMateria {
@@ -18,12 +17,11 @@ public class AlumnoMateria {
     @JoinColumn(name = "id_materia")
     private Materia materia;
 
-    // 👇 ESTE ES EL QUE TE FALTA
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }
