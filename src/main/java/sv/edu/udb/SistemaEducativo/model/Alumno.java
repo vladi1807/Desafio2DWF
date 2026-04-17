@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 @Entity
 public class Alumno {
 
-    @Id   // 👈 ahora sí funciona correctamente
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
