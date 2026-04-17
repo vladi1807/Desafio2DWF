@@ -17,4 +17,13 @@ public class AlumnoMateria {
     @ManyToOne
     @JoinColumn(name = "id_materia")
     private Materia materia;
+
+    // 👇 ESTE ES EL QUE TE FALTA
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getId() {
+        return id;
+    }
 }
